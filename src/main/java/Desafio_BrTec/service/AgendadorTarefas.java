@@ -15,7 +15,7 @@ public class AgendadorTarefas {
     private final AtomicLong counter = new AtomicLong();
 
     @Scheduled(fixedRate = 5000)
-    public void agendarNovaTarefa() { // <-- Correção: removido o "throws InterruptedException"
+    public void agendarNovaTarefa() {
         System.out.println("Agendando nova tarefa...");
 
         Tarefa novaTarefa = new Tarefa();

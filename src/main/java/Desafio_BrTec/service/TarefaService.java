@@ -24,15 +24,15 @@ public class TarefaService {
 
     public Tarefa criarTarefa(Tarefa tarefa) {
         tarefa.setStatus(StatusTarefa.PENDENTE);
-        return tarefaRepository.save(tarefa); // <-- O return que faltava
+        return tarefaRepository.save(tarefa);
     }
 
     public List<Tarefa> listarTodas() {
-        return tarefaRepository.findAll(); // <-- O return que faltava
+        return tarefaRepository.findAll();
     }
 
     public Optional<Tarefa> buscarPorId(Long id) {
-        return tarefaRepository.findById(id); // <-- O return que faltava
+        return tarefaRepository.findById(id);
     }
 
     public Tarefa atualizarTarefa(Long id, Tarefa tarefaDetails) {
