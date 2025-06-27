@@ -2,7 +2,7 @@ package Desafio_BrTec.entity;
 
 import Desafio_BrTec.enums.StatusTarefa;
 import jakarta.persistence.*;
-import lombok.Data; // Pode manter, não atrapalha
+import lombok.Data;
 
 @Entity
 @Data
@@ -16,6 +16,13 @@ public class Tarefa {
 
     @Enumerated(EnumType.STRING)
     private StatusTarefa status;
+
+
+    public Tarefa() {
+    }
+
+
+    // MÉTODOS GETTERS E SETTERS
 
 
     public Long getId() {
